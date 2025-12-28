@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/6d1607b36a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/galerry.js"></script>
+    <link rel="stylesheet" href="css/styleGallery.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar bg-dark navbar-expand-lg" data-bs-theme="dark">
+        <div class="row">
+          <label class="navbar-title">Gallery Page</label>
+
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul
+                class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                style="--bs-scroll-height: 100px"
+              >
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="/index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Specialties
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" onclick="Showdeepclean()"><i class="fa-solid fa-broom"></i> <i class="fa-solid fa-dumbbell"></i> Deep Clean</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" onclick="Showmaintenancehome()"> <i class="fa-solid fa-house"></i> Regular cleaning</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" onclick="Showpostconstruction()"><i class="fa-solid fa-broom"></i> <i class="fa-solid fa-helmet-safety"></i> Post-construction</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" onclick="ShowEverything()"><i class="fa-solid fa-images"></i> Show Everything</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Contacts
+                  </a>
+                  <ul class="dropdown-menu contacts">
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><i class="icon fa-solid fa-phone"></i> Cell Phone</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="fa-solid fa-message"></i> E-mail</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="fa-brands fa-instagram"></i> Social media</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="fa-brands fa-whatsapp"></i> Whatsapp</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <!-- <form class="d-flex" role="search">
+        <input class="form-control me-2 outline-primary" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-dark" type="submit">Search</button>
+      </form> -->
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="row">
+
+      <div class="card-container deep-clean">
+        <div class="image-card">
+             <div class="card-body">
+            <img src="/img/deep clean/stove deep clean-before.png" alt="..." />
+              <h5 class="card-title">City Toronto</h5>
+              <h5 class="card-title">Before</h5>
+              <p class="card-text"></p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+        </div>
+        <div class="image-card">
+             <div class="card-body">
+            <img src="/img/deep clean/stove deep clean-after.png" alt="..." />
+              <h5 class="card-title">City Toronto</h5>
+              <h5 class="card-title">After</h5>
+              <p class="card-text">Deep clean 3 hours after</p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </div>
+      </div>
+
+        <div class="card-container home-maintenance">
+        <div class="image-card">
+             <div class="card-body">
+            <img src="/img/mainetence home/homemaintenece.png" alt="..." />
+              <h5 class="card-title">City Mississauga</h5>
+              <h5 class="card-title">Before</h5>
+              <p class="card-text"></p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+        </div>
+        <div class="image-card">
+             <div class="card-body">
+            <img src="/img/mainetence home/homemaintenece after.png" alt="..." />
+              <h5 class="card-title">City Mississauga</h5>
+              <h5 class="card-title">After</h5>
+              <p class="card-text">Deep clean 15 minutes after</p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </div>
+      </div>
+      
+           <div class="card-container postconstruction">
+        <div class="image-card">
+             <div class="card-body">
+            <img src="/img/posconstroction/poscosntrucao before.png" alt="..." />
+              <h5 class="card-title">City Vaughan</h5>
+              <h5 class="card-title">Before</h5>
+              <p class="card-text"></p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+        </div>
+        <div class="image-card">
+             <div class="card-body">
+            <img src="/img/posconstroction/poscosntrucao after.png" alt="..." />
+              <h5 class="card-title">City Vaughan</h5>
+              <h5 class="card-title">After</h5>
+              <p class="card-text">Post construction clean 2 hours after</p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </div>
+      </div>
+      
+           <div class="card-container postconstruction">
+        <div class="image-card">
+             <div class="card-body">
+            <img src="/img/posconstroction/posconstruction beforevan.png" alt="..." />
+              <h5 class="card-title">City Vaughan</h5>
+              <h5 class="card-title">Before</h5>
+              <p class="card-text"></p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+        </div>
+        <div class="image-card">
+             <div class="card-body">
+            <img src="/img/posconstroction/posconstruction aftervan.png" alt="..." />
+              <h5 class="card-title">City Vaughan</h5>
+              <h5 class="card-title">After</h5>
+              <p class="card-text">Post construction clean 2.5 hours after</p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>

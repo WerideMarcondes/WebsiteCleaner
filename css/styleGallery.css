@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  pad: 0;
+  background-color: blanchedalmond;
+}
+.container {
+  margin-top: 30px;
+  background-color: blanchedalmond;
+}
+
+.navbar {
+  justify-content: center;
+  height: 130px;
+}
+
+.navbar-title {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+}
+
+.navbar-nav {
+  margin: auto;
+}
+.nav-link:hover {
+  color: white;
+}
+
+.dropdown-item:hover {
+  background-color: white;
+  color: black;
+}
+.card-container {
+  margin-top: 20px;
+  display: flex; /* Ativa o Flexbox */
+  width: 38rem;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+
+.image-card {
+  width: 80%; /* Ajuste conforme necessário */
+  padding: 10px;
+  text-align: center;
+}
+
+
+img {
+  width: 270px;  /* Largura fixa */
+  height: 200px; /* Altura fixa */
+  object-fit: cover; /* Preenche a caixa, cortando o excesso */
+  /* Ou use 'contain' para que a imagem caiba inteira */
+}
+
+.row{justify-content: center;}
