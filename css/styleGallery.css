@@ -1,16 +1,16 @@
 body {
   margin: 0;
   pad: 0;
-  background-color: blanchedalmond;
+  background-color: rgb(245, 239, 231);
 }
 .container {
   margin-top: 30px;
-  background-color: blanchedalmond;
+  background-color: rgb(4, 4, 4);
 }
 
 .navbar {
   justify-content: center;
-  height: 130px;
+  height: 230px;
 }
 
 .navbar-title {
@@ -44,12 +44,79 @@ body {
   text-align: center;
 }
 
-
 img {
-  width: 270px;  /* Largura fixa */
-  height: 200px; /* Altura fixa */
+  width: 270px; /* Largura fixa */
+  height: 250px; /* Altura fixa */
   object-fit: cover; /* Preenche a caixa, cortando o excesso */
   /* Ou use 'contain' para que a imagem caiba inteira */
 }
 
-.row{justify-content: center;}
+.row {
+  justify-content: center;
+}
+
+@media (max-width: 500px) {
+
+  .navbar1{display: none;}
+
+  body {
+    margin-top: 70px;
+  }
+
+  .navbar-title {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+  }
+
+  .navbar {
+    width: 390px; /* Largura fixa */
+    height: 70px; /* Altura fixa */
+    margin-bottom: 20px;
+    text-align: right;
+  }
+
+  .offcanvas-body {
+    text-align: right;
+  }
+
+  #offcanvasDarkNavbar {
+    width: 250px; /* Largura fixa */
+    height: 400px;
+  }
+  img {
+    width: 150px; /* Largura fixa */
+    height: 200px; /* Altura fixa */
+    object-fit: cover; /* Preenche a caixa, cortando o excesso */
+    /* Ou use 'contain' para que a imagem caiba inteira */
+  }
+
+  .image-card {
+    width: 65%; /* Ajuste conforme necessário */
+    padding: 10px;
+    text-align: center;
+  }
+
+  .card-container {
+    margin-top: 10px;
+    display: flex; /* Ativa o Flexbox */
+    width: 80%rem;
+    height: 17rem;
+    border: 1px solid #ccc;
+    background-color: white;
+  }
+
+  .card-text {
+    font-size: 10px;
+  }
+
+  .card-title {
+    font-size: 10px;
+  }
+}
+
+
+@media (min-width: 531px) {
+
+  .hamburger{display: none;}
+}
