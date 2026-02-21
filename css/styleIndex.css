@@ -1,18 +1,20 @@
-
-body{
-margin: 0;
-pad: 0;
-background-color: rgb(193, 241, 225);
-
+body {
+  margin: 0;
+  pad: 0;
+  background-color: rgb(193, 241, 225);
+  
 }
-.container{
-    margin-top: 30px;
+.container {
+  margin-top: 30px;
+  max-width: 100%;
+  
+  
 }
-
 
 .navbar {
   justify-content: center;
   height: 130px;
+  
 }
 
 .navbar-title {
@@ -23,20 +25,91 @@ background-color: rgb(193, 241, 225);
 
 .navbar-nav {
   margin: auto;
- 
 }
-.nav-link:hover{
+.nav-link:hover {
   color: white;
-
+}
+.nav-link {
+  font-size: 20px;
 }
 
-.dropdown-item:hover{
+.dropdown-item:hover {
   background-color: white;
   color: black;
-
 }
 .card {
   margin-top: 30px;
+    
 }
 
+@media (min-width: 275px) and (max-width: 576px) {
+  .navbarindex {
+    display: none;
+  }
 
+  body {
+    margin: 0;
+    pad: 0;
+    background-color: rgb(193, 241, 225);
+  }
+  .navbar-title {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+  }
+
+  .navbar {
+    width: 100%; /* Largura fixa */
+    height: 70px; /* Altura fixa */
+    margin-bottom: 20px;
+    text-align: right;
+  }
+
+  .offcanvas-body {
+    text-align: right;
+  }
+
+  #offcanvasDarkNavbar {
+    width: 250px; /* Largura fixa */
+    height: 400px;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 991px) {
+  .navbarindex {
+    display: none;
+  }
+  body {
+    margin: 0;
+    pad: 0;
+    background-color: rgb(193, 241, 225);
+  }
+
+  .navbar-title {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+  }
+
+  .navbar {
+    width: 100%; /* Largura fixa */
+    height: 70px; /* Altura fixa */
+    margin-bottom: 20px;
+    text-align: right;
+  }
+
+  .offcanvas-body {
+    text-align: right;
+  }
+
+  #offcanvasDarkNavbar {
+    width: 250px; /* Largura fixa */
+    height: 400px;
+  }
+}
+
+@media (min-width: 992px) {
+  .hamburger {
+    display: none;
+  }
+}

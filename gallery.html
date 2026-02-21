@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -31,27 +31,42 @@
     <link rel="stylesheet" href="css/styleGallery.css" />
   </head>
   <body>
-
-
-
-    <nav class="navbar hamburger fixed-top navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Photo Gallery</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class=" offcanvas offcanvas-end navbar-dark bg-dark " tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-      <div class="offcanvas-header">
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-2">
-          <li class="nav-item">
+    <div class="container">
+      <nav class="navbar hamburger fixed-top navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Photo Gallery</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end navbar-dark bg-dark"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-2">
+                <li class="nav-item">
                   <a class="nav-link" aria-current="page" href="/index.html"
                     >Home</a
                   >
                 </li>
-             <li class="nav-item dropdown">
+                <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle navbar-dark bg-dark"
                     href="#"
@@ -61,19 +76,53 @@
                   >
                     Specialties
                   </a>
-                  <ul class="dropdown-menu ">
-                    <li><a class="dropdown-item" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" onclick="Showdeepclean()"><i class="fa-solid fa-broom"></i> <i class="fa-solid fa-dumbbell"></i> Deep Clean</a></li>
-                    <li><hr class="dropdown-divider" /></li>
+                  <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" onclick="Showmaintenancehome()"> <i class="fa-solid fa-house"></i> Regular cleaning</a>
+                      <a
+                        class="dropdown-item"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"
+                        onclick="Showdeepclean()"
+                        ><i class="fa-solid fa-broom"></i>
+                        <i class="fa-solid fa-dumbbell"></i> Deep Clean</a
+                      >
                     </li>
                     <li><hr class="dropdown-divider" /></li>
                     <li>
-                      <a class="dropdown-item" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" onclick="Showpostconstruction()"><i class="fa-solid fa-broom"></i> <i class="fa-solid fa-helmet-safety"></i> Post-construction</a>
+                      <a
+                        class="dropdown-item"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"
+                        onclick="Showmaintenancehome()"
+                      >
+                        <i class="fa-solid fa-house"></i> Regular cleaning</a
+                      >
                     </li>
                     <li><hr class="dropdown-divider" /></li>
                     <li>
-                      <a class="dropdown-item" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" onclick="ShowEverything()"><i class="fa-solid fa-images"></i> Show Everything</a>
+                      <a
+                        class="dropdown-item"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"
+                        onclick="Showpostconstruction()"
+                        ><i class="fa-solid fa-broom"></i>
+                        <i class="fa-solid fa-helmet-safety"></i>
+                        Post-construction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"
+                        onclick="ShowEverything()"
+                        ><i class="fa-solid fa-images"></i> Show Everything</a
+                      >
                     </li>
                   </ul>
                 </li>
@@ -113,14 +162,12 @@
                     </li>
                   </ul>
                 </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</nav>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
 
-
-    <div class="container">
       <nav class="navbar navbar1 bg-dark navbar-expand-lg" data-bs-theme="dark">
         <div class="row">
           <label class="navbar-title">Gallery Page</label>
@@ -147,18 +194,31 @@
                     Specialties
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" onclick="Showdeepclean()"><i class="fa-solid fa-broom"></i> <i class="fa-solid fa-dumbbell"></i> Deep Clean</a></li>
-                    <li><hr class="dropdown-divider" /></li>
                     <li>
-                      <a class="dropdown-item" onclick="Showmaintenancehome()"> <i class="fa-solid fa-house"></i> Regular cleaning</a>
+                      <a class="dropdown-item" onclick="Showdeepclean()"
+                        ><i class="fa-solid fa-broom"></i>
+                        <i class="fa-solid fa-dumbbell"></i> Deep Clean</a
+                      >
                     </li>
                     <li><hr class="dropdown-divider" /></li>
                     <li>
-                      <a class="dropdown-item" onclick="Showpostconstruction()"><i class="fa-solid fa-broom"></i> <i class="fa-solid fa-helmet-safety"></i> Post-construction</a>
+                      <a class="dropdown-item" onclick="Showmaintenancehome()">
+                        <i class="fa-solid fa-house"></i> Regular cleaning</a
+                      >
                     </li>
                     <li><hr class="dropdown-divider" /></li>
                     <li>
-                      <a class="dropdown-item" onclick="ShowEverything()"><i class="fa-solid fa-images"></i> Show Everything</a>
+                      <a class="dropdown-item" onclick="Showpostconstruction()"
+                        ><i class="fa-solid fa-broom"></i>
+                        <i class="fa-solid fa-helmet-safety"></i>
+                        Post-construction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" onclick="ShowEverything()"
+                        ><i class="fa-solid fa-images"></i> Show Everything</a
+                      >
                     </li>
                   </ul>
                 </li>
@@ -208,91 +268,150 @@
         </div>
       </nav>
 
-      <div class="row">
-
-      <div class="card-container deep-clean">
-        <div class="image-card">
-             <div class="card-body">
-            <img src="/img/deep clean/stove deep clean-before.png" alt="..." />
+      <div class="row ">
+        <div class="card-container deep-clean">
+          <div class="image-card">
+            <div class="card-body">
+              <img
+                src="/img/deep clean/stove deep clean-before.png"
+                alt="..."
+              />
               <h5 class="card-title">City Toronto</h5>
               <h5 class="card-title">Before</h5>
               <p class="card-text"></p>
               <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
             </div>
-        </div>
-        <div class="image-card">
-             <div class="card-body">
-            <img src="/img/deep clean/stove deep clean-after.png" alt="..." />
+          </div>
+          <div class="image-card">
+            <div class="card-body">
+              <img src="/img/deep clean/stove deep clean-after.png" alt="..." />
               <h5 class="card-title">City Toronto</h5>
               <h5 class="card-title">After</h5>
               <p class="card-text">Deep clean 3 hours after</p>
               <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
             </div>
           </div>
-      </div>
+        </div>
+
+        <div class="card-container deep-clean">
+          <div class="image-card">
+            <div class="card-body">
+              <img src="/img/deep clean/toilet before.jpeg" alt="..." />
+              <h5 class="card-title">City Toronto</h5>
+              <h5 class="card-title">Before</h5>
+              <p class="card-text"></p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </div>
+          <div class="image-card">
+            <div class="card-body">
+              <img src="/img/deep clean/toilet after.jpeg" alt="..." />
+              <h5 class="card-title">City Toronto</h5>
+              <h5 class="card-title">After</h5>
+              <p class="card-text">Deep clean</p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container deep-clean">
+          <div class="image-card">
+            <div class="card-body">
+              <img src="/img/deep clean/banheira before.jpeg" alt="..." />
+              <h5 class="card-title">City Toronto</h5>
+              <h5 class="card-title">Before</h5>
+              <p class="card-text"></p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </div>
+          <div class="image-card">
+            <div class="card-body">
+              <img src="/img/deep clean/banheira after.jpeg" alt="..." />
+              <h5 class="card-title">City Toronto</h5>
+              <h5 class="card-title">After</h5>
+              <p class="card-text">Deep clean</p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </div>
+        </div>
 
         <div class="card-container home-maintenance">
-        <div class="image-card">
-             <div class="card-body">
-            <img src="/img/mainetence home/homemaintenece.png" alt="..." />
+          <div class="image-card">
+            <div class="card-body">
+              <img src="/img/mainetence home/homemaintenece.png" alt="..." />
               <h5 class="card-title">City Mississauga</h5>
               <h5 class="card-title">Before</h5>
               <p class="card-text"></p>
               <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
             </div>
-        </div>
-        <div class="image-card">
-             <div class="card-body">
-            <img src="/img/mainetence home/homemaintenece after.png" alt="..." />
+          </div>
+          <div class="image-card">
+            <div class="card-body">
+              <img
+                src="/img/mainetence home/homemaintenece after.png"
+                alt="..."
+              />
               <h5 class="card-title">City Mississauga</h5>
               <h5 class="card-title">After</h5>
               <p class="card-text">Deep clean 15 minutes after</p>
               <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
             </div>
           </div>
-      </div>
-      
-           <div class="card-container postconstruction">
-        <div class="image-card">
-             <div class="card-body">
-            <img src="/img/posconstroction/poscosntrucao before.png" alt="..." />
+        </div>
+
+        <div class="card-container postconstruction">
+          <div class="image-card">
+            <div class="card-body">
+              <img
+                src="/img/posconstroction/poscosntrucao before.png"
+                alt="..."
+              />
               <h5 class="card-title">City Vaughan</h5>
               <h5 class="card-title">Before</h5>
               <p class="card-text"></p>
               <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
             </div>
-        </div>
-        <div class="image-card">
-             <div class="card-body">
-            <img src="/img/posconstroction/poscosntrucao after.png" alt="..." />
+          </div>
+          <div class="image-card">
+            <div class="card-body">
+              <img
+                src="/img/posconstroction/poscosntrucao after.png"
+                alt="..."
+              />
               <h5 class="card-title">City Vaughan</h5>
               <h5 class="card-title">After</h5>
               <p class="card-text">Post construction clean 2 hours after</p>
               <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
             </div>
           </div>
-      </div>
-      
-           <div class="card-container postconstruction">
-        <div class="image-card">
-             <div class="card-body">
-            <img src="/img/posconstroction/posconstruction beforevan.png" alt="..." />
+        </div>
+
+        <div class="card-container postconstruction">
+          <div class="image-card">
+            <div class="card-body">
+              <img
+                src="/img/posconstroction/posconstruction beforevan.png"
+                alt="..."
+              />
               <h5 class="card-title">City Vaughan</h5>
               <h5 class="card-title">Before</h5>
               <p class="card-text"></p>
               <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
             </div>
-        </div>
-        <div class="image-card">
-             <div class="card-body">
-            <img src="/img/posconstroction/posconstruction aftervan.png" alt="..." />
+          </div>
+          <div class="image-card">
+            <div class="card-body">
+              <img
+                src="/img/posconstroction/posconstruction aftervan.png"
+                alt="..."
+              />
               <h5 class="card-title">City Vaughan</h5>
               <h5 class="card-title">After</h5>
               <p class="card-text">Post construction clean 2.5 hours after</p>
               <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
             </div>
           </div>
-      </div>
+        </div>
       </div>
     </div>
   </body>

@@ -1,16 +1,20 @@
 body {
   margin: 0;
   pad: 0;
-  background-color: rgb(245, 239, 231);
+  background-color: rgb(180, 243, 244);
 }
 .container {
   margin-top: 30px;
-  background-color: rgb(4, 4, 4);
+  max-width: 100%;
+}
+
+.row{
+  gap: 15px;
 }
 
 .navbar {
   justify-content: center;
-  height: 230px;
+  height: 130px;
 }
 
 .navbar-title {
@@ -25,7 +29,9 @@ body {
 .nav-link:hover {
   color: white;
 }
-
+.nav-link {
+  font-size: 20px;
+}
 .dropdown-item:hover {
   background-color: white;
   color: black;
@@ -33,31 +39,39 @@ body {
 .card-container {
   margin-top: 20px;
   display: flex; /* Ativa o Flexbox */
-  width: 38rem;
-  border: 1px solid #ccc;
+  width: 45rem;
+  border: 3px solid #0e0d0d;
   background-color: white;
+  border-radius: 15px;
 }
 
 .image-card {
-  width: 80%; /* Ajuste conforme necessário */
+  width: 100%; /* Ajuste conforme necessário */
   padding: 10px;
   text-align: center;
 }
 
 img {
-  width: 270px; /* Largura fixa */
-  height: 250px; /* Altura fixa */
+  width: 300px; /* Largura fixa */
+  height: 450px; /* Altura fixa */
   object-fit: cover; /* Preenche a caixa, cortando o excesso */
   /* Ou use 'contain' para que a imagem caiba inteira */
+  background-size: cover; /* Cobre a tela toda */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Não repete a imagem */
+  background-attachment: fixed;
+  border-radius: 30px;
+  border: solid 5px;
 }
 
 .row {
   justify-content: center;
 }
 
-@media (max-width: 500px) {
-
-  .navbar1{display: none;}
+@media (min-width: 275px) and (max-width: 576px) {
+  .navbar1 {
+    display: none;
+  }
 
   body {
     margin-top: 70px;
@@ -70,7 +84,7 @@ img {
   }
 
   .navbar {
-    width: 390px; /* Largura fixa */
+    width: 100%; /* Largura fixa */
     height: 70px; /* Altura fixa */
     margin-bottom: 20px;
     text-align: right;
@@ -86,9 +100,15 @@ img {
   }
   img {
     width: 150px; /* Largura fixa */
-    height: 200px; /* Altura fixa */
+    height: 250px; /* Altura fixa */
     object-fit: cover; /* Preenche a caixa, cortando o excesso */
     /* Ou use 'contain' para que a imagem caiba inteira */
+    background-size: cover; /* Cobre a tela toda */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    background-attachment: fixed;
+    border-radius: 30px;
+    border: solid 5px;
   }
 
   .image-card {
@@ -101,8 +121,8 @@ img {
     margin-top: 10px;
     display: flex; /* Ativa o Flexbox */
     width: 80%rem;
-    height: 17rem;
-    border: 1px solid #ccc;
+    height: 20rem;
+    border-radius: 15px;
     background-color: white;
   }
 
@@ -115,8 +135,78 @@ img {
   }
 }
 
+@media (min-width: 575px) and (max-width: 991px) {
+  .navbar1 {
+    display: none;
+  }
 
-@media (min-width: 531px) {
+  body {
+    margin: 0;
+    pad: 0;
+    margin-top: 70px;
+    background-color: rgb(4, 4, 4);
+  }
 
-  .hamburger{display: none;}
+  .navbar-title {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+  }
+
+  .navbar {
+    width: 100%; /* Largura fixa */
+    height: 70px; /* Altura fixa */
+    margin-bottom: 20px;
+    text-align: right;
+  }
+
+  .offcanvas-body {
+    text-align: right;
+  }
+
+  #offcanvasDarkNavbar {
+    width: 250px; /* Largura fixa */
+    height: 400px;
+  }
+  img {
+    width: 200px; /* Largura fixa */
+    height: 300px; /* Altura fixa */
+    object-fit: cover; /* Preenche a caixa, cortando o excesso */
+    /* Ou use 'contain' para que a imagem caiba inteira */
+    background-size: cover; /* Cobre a tela toda */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    background-attachment: fixed;
+    border-radius: 30px;
+    border: solid 5px;
+  }
+
+  .image-card {
+    width: 200%; /* Ajuste conforme necessário */
+    padding: 10px;
+    text-align: center;
+  }
+
+  .card-container {
+    margin-top: 10px;
+    display: flex; /* Ativa o Flexbox */
+    width: 90%rem;
+    height: 23rem;
+    border-radius: 15px;
+    background-color: white;
+  }
+
+  .card-text {
+    font-size: 10px;
+  }
+
+  .card-title {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .hamburger {
+    display: none;
+  }
 }
