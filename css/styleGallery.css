@@ -50,6 +50,10 @@ body {
   padding: 10px;
   text-align: center;
 }
+img:hover {
+  transform: scale(1.3);
+}
+
 
 img {
   width: 250px; /* Largura fixa */
@@ -61,7 +65,8 @@ img {
   background-repeat: no-repeat; /* Não repete a imagem */
   background-attachment: fixed;
   border-radius: 30px;
-  border: solid 5px;
+  /* border: solid 5px; */
+  transition: 0.7s;
 }
 
 .row {
