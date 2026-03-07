@@ -52,8 +52,8 @@ body {
 }
 
 img {
-  width: 300px; /* Largura fixa */
-  height: 450px; /* Altura fixa */
+  width: 250px; /* Largura fixa */
+  height: 400px; /* Altura fixa */
   object-fit: cover; /* Preenche a caixa, cortando o excesso */
   /* Ou use 'contain' para que a imagem caiba inteira */
   background-size: cover; /* Cobre a tela toda */
@@ -144,7 +144,6 @@ img {
     margin: 0;
     pad: 0;
     margin-top: 70px;
-    background-color: rgb(4, 4, 4);
   }
 
   .navbar-title {
