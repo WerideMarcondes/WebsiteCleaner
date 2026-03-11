@@ -50,7 +50,7 @@ body {
 #about {
   color: white;
   background-color: #1b3c53;
-  margin-top: 0px;
+  margin-top: 50px;
 }
 
 #mission {
@@ -62,8 +62,29 @@ body {
 #vision {
   color: black;
   background-color: #c0def3;
-  margin-top: 300px;
+  margin-top: 150px;
 }
+
+#about:hover {
+    transition: 2.2s;
+    margin-top: -30px;
+    height: 750px;
+  }
+
+  #mission:hover {
+    color: black;
+    margin-top: 0px;
+    transition: 2.2s;
+    margin-top: -30px;
+    height: 750px;
+  }
+
+  #vision:hover {
+    color: black;
+    margin-top: -30px;
+    transition: 2.2s;
+    height: 750px;
+  }
 
 .dropdown-item:hover {
   background-color: white;
@@ -280,8 +301,8 @@ body {
   }
 
   #about:hover {
-    transition: 2s;
-    margin-top: -100px;
+    transition: 2.2s;
+    margin-top: -30px;
     height: 750px;
   }
 
@@ -289,25 +310,15 @@ body {
     color: black;
     margin-top: 0px;
     transition: 2.2s;
-    margin-top: -100px;
+    margin-top: -30px;
     height: 750px;
   }
 
   #vision:hover {
     color: black;
-    margin-top: -100px;
+    margin-top: -30px;
     transition: 2.2s;
     height: 750px;
-  }
-
-  #mission {
-    color: black;
-    margin-top: 100px;
-  }
-
-  #vision {
-    color: black;
-    margin-top: 200px;
   }
 
   @media (min-width: 991px) {
