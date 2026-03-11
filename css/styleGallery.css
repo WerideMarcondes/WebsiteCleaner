@@ -1,27 +1,39 @@
 body {
   margin: 0;
-  pad: 0;
-  background-color: rgb(180, 243, 244);
+  padding: 0;
+  background-color: #f3e3d0;
 }
+
 .container {
   margin-top: 30px;
   max-width: 100%;
 }
 
-.row{
-  gap: 15px;
-}
-
 .navbar {
   justify-content: center;
-  height: 130px;
+  height: 70px;
 }
 
 .navbar-title {
-  text-align: center;
-  color: white;
-  font-size: 40px;
-}
+    text-align: center;
+    color: goldenrod;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+
+    .corporate {
+    font-size: 20px;
+    font-weight: bold;
+    color: goldenrod;
+    margin-right: auto;
+    padding: 10px;
+  }
+
+  .navbarindex {
+    text-align: center;
+    position: absolute;
+  }
+
 
 .navbar-nav {
   margin: auto;
@@ -30,34 +42,43 @@ body {
   color: white;
 }
 .nav-link {
-  font-size: 20px;
+  font-size: 16px;
 }
 .dropdown-item:hover {
   background-color: white;
   color: black;
 }
+
+.card-title {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+.card-text {
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
 .card-container {
   margin-top: 20px;
-  display: flex; /* Ativa o Flexbox */
-  width: 45rem;
+  width: 20rem;
   border: 3px solid #0e0d0d;
   background-color: white;
   border-radius: 15px;
+  display: flex;
 }
 
 .image-card {
-  width: 100%; /* Ajuste conforme necessário */
-  padding: 10px;
+  padding: 5px;
   text-align: center;
 }
 img:hover {
-  transform: scale(1.3);
+  transform: scale(1.1);
 }
 
-
 img {
-  width: 250px; /* Largura fixa */
-  height: 400px; /* Altura fixa */
+  width: 120px; /* Largura fixa */
+  height: 200px; /* Altura fixa */
   object-fit: cover; /* Preenche a caixa, cortando o excesso */
   /* Ou use 'contain' para que a imagem caiba inteira */
   background-size: cover; /* Cobre a tela toda */
@@ -71,15 +92,15 @@ img {
 
 .row {
   justify-content: center;
+  
 }
 
 @media (min-width: 275px) and (max-width: 576px) {
-  .navbar1 {
+  .mainnav  {
     display: none;
   }
-
-  body {
-    margin-top: 70px;
+  .pictures {
+    margin-top: 90px;
   }
 
   .navbar-title {
@@ -89,10 +110,11 @@ img {
   }
 
   .navbar {
-    width: 100%; /* Largura fixa */
+    justify-content: center;
     height: 70px; /* Altura fixa */
-    margin-bottom: 20px;
+    margin-top: 0;
     text-align: right;
+    border-radius: 0px;
   }
 
   .offcanvas-body {
@@ -104,8 +126,8 @@ img {
     height: 400px;
   }
   img {
-    width: 150px; /* Largura fixa */
-    height: 250px; /* Altura fixa */
+    width: 120px; /* Largura fixa */
+    height: 200px; /* Altura fixa */
     object-fit: cover; /* Preenche a caixa, cortando o excesso */
     /* Ou use 'contain' para que a imagem caiba inteira */
     background-size: cover; /* Cobre a tela toda */
@@ -113,11 +135,10 @@ img {
     background-repeat: no-repeat; /* Não repete a imagem */
     background-attachment: fixed;
     border-radius: 30px;
-    border: solid 5px;
   }
 
   .image-card {
-    width: 65%; /* Ajuste conforme necessário */
+    width: 50%; /* Ajuste conforme necessário */
     padding: 10px;
     text-align: center;
   }
@@ -125,8 +146,8 @@ img {
   .card-container {
     margin-top: 10px;
     display: flex; /* Ativa o Flexbox */
-    width: 80%rem;
-    height: 20rem;
+    width: 60%rem;
+    height: 17rem;
     border-radius: 15px;
     background-color: white;
   }
@@ -141,14 +162,8 @@ img {
 }
 
 @media (min-width: 575px) and (max-width: 991px) {
-  .navbar1 {
+  .mainnav {
     display: none;
-  }
-
-  body {
-    margin: 0;
-    pad: 0;
-    margin-top: 70px;
   }
 
   .navbar-title {
@@ -160,21 +175,23 @@ img {
   .navbar {
     width: 100%; /* Largura fixa */
     height: 70px; /* Altura fixa */
-    margin-bottom: 20px;
     text-align: right;
+    margin-top: 0px;
   }
 
   .offcanvas-body {
     text-align: right;
   }
-
+  .pictures {
+    margin-top: 90px;
+  }
   #offcanvasDarkNavbar {
     width: 250px; /* Largura fixa */
     height: 400px;
   }
   img {
-    width: 200px; /* Largura fixa */
-    height: 300px; /* Altura fixa */
+    width: 120px; /* Largura fixa */
+    height: 200px; /* Altura fixa */
     object-fit: cover; /* Preenche a caixa, cortando o excesso */
     /* Ou use 'contain' para que a imagem caiba inteira */
     background-size: cover; /* Cobre a tela toda */
@@ -182,11 +199,10 @@ img {
     background-repeat: no-repeat; /* Não repete a imagem */
     background-attachment: fixed;
     border-radius: 30px;
-    border: solid 5px;
   }
 
   .image-card {
-    width: 200%; /* Ajuste conforme necessário */
+    width: 50%; /* Ajuste conforme necessário */
     padding: 10px;
     text-align: center;
   }
@@ -194,8 +210,8 @@ img {
   .card-container {
     margin-top: 10px;
     display: flex; /* Ativa o Flexbox */
-    width: 90%rem;
-    height: 23rem;
+    width: 50%rem;
+    height: 17rem;
     border-radius: 15px;
     background-color: white;
   }
