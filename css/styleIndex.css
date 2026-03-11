@@ -64,7 +64,7 @@ body {
   background-color: #c0def3;
   margin-top: 150px;
 }
-
+/* 
 #about:hover {
     transition: 2.2s;
     margin-top: -30px;
@@ -84,7 +84,7 @@ body {
     margin-top: -30px;
     transition: 2.2s;
     height: 750px;
-  }
+  } */
 
 .dropdown-item:hover {
   background-color: white;
