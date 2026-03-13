@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: black;
+  background-color: #f3e3d0;
 }
 
 .container {
@@ -12,7 +12,6 @@ body {
 .navbar {
   justify-content: center;
   height: 70px;
-  font-family: "Tangerine", serif;
 }
 
 .navbar-title {
@@ -28,7 +27,6 @@ body {
   color: goldenrod;
   margin-right: auto;
   padding: 10px;
-  font-family: "Tangerine", serif;
 }
 
 .navbarindex {
@@ -62,8 +60,13 @@ body {
 }
 .card-container {
   margin-top: 20px;
-  width: 28rem;
+  width: 30rem;
+  height: 20rem;
+  border: 3px solid #0e0d0d;
+  background-color: white;
+  border-radius: 15px;
   display: flex;
+  
 }
 .image-card {
   padding: 5px;
@@ -73,18 +76,17 @@ img:hover {
   transform: scale(1.1);
 }
 img {
-  width: 200px; /* Largura fixa */
-  height: 250px; /* Altura fixa */
+  width: 220px; /* Largura fixa */
+  height: 300px; /* Altura fixa */
   object-fit: cover; /* Preenche a caixa, cortando o excesso */
   /* Ou use 'contain' para que a imagem caiba inteira */
   background-size: cover; /* Cobre a tela toda */
   background-position: center; /* Centraliza a imagem */
   background-repeat: no-repeat; /* Não repete a imagem */
   background-attachment: fixed;
-  border-radius: 0px;
+  border-radius: 30px;
   /* border: solid 5px; */
   transition: 0.7s;
-  gap: 15px;
 }
 .row {
   justify-content: center;
@@ -107,17 +109,19 @@ img {
     text-align: center;
     color: white;
     font-size: 30px;
+    
   }
 
   .navbar {
     justify-content: center;
+    font-size: 18px;
     height: 70px; /* Altura fixa */
     margin-top: 0;
     text-align: right;
-    font-family: "Tangerine", serif;
+     font-family: "Tangerine", serif;
   }
-  .corporate {
-    font-size: 20px;
+ .corporate {
+    font-size: 18px;
     font-weight: bold;
     color: goldenrod;
     margin-right: auto;
@@ -150,8 +154,8 @@ img {
   }
 
   img:hover {
-    transform: none;
-  }
+  transform: none;
+}
   .card-container {
     background-color: transparent;
     justify-content: center;
@@ -191,7 +195,7 @@ img {
     margin-top: 0px;
     font-family: "Tangerine", serif;
   }
-  .corporate {
+   .corporate {
     font-size: 20px;
     font-weight: bold;
     color: goldenrod;
@@ -226,17 +230,13 @@ img {
     text-align: center;
   }
 
-  img:hover {
-    transform: none;
-  }
-
   .card-container {
     background-color: transparent;
     justify-content: center;
     border: none;
     border-radius: 0px;
     margin-top: 0px;
-    width: 20rem;
+    
   }
 
   .card-text {
