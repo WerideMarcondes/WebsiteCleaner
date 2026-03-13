@@ -19,18 +19,20 @@
     <div class="container">
  <nav class="navbar hamburger fixed-top navbar-dark bg-dark">
   <div class="container-fluid">
+     <label class="navbar-brand corporate" >Special Cleaning</label>
     <label class="navbar-brand">Home Page</label>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class=" offcanvas offcanvas-end navbar-dark bg-dark " tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-      <div class="offcanvas-header"> <label class="navbar-brand">Special Cleaners</label>
+      <div class="offcanvas-header"> <label class="navbar-brand">Special Cleaning</label>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-2">
        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="https://weridemarcondes.github.io/WebsiteCleaner/gallery.html">Photo gallery</a>
+          <!-- <a class="nav-link" aria-current="page" href="https://weridemarcondes.github.io/WebsiteCleaner/gallery.html">Photo gallery</a> -->
+            <a class="nav-link" aria-current="page" href="/gallery.html">Photo gallery</a>
         </li>
              <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -44,8 +46,7 @@
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#regular"><i class="fa-solid fa-house"></i> Regular cleaning</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item"  type="button" data-bs-toggle="modal" data-bs-target="#postconstruction"><i class="fa-solid fa-broom"></i><i class="fa-solid fa-helmet-safety"></i>   Post-construction</a></li>
-            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item"  type="button" data-bs-toggle="modal" data-bs-target="#postconstruction"><i class="fa-solid fa-broom"></i><i class="fa-solid fa-helmet-safety"></i> Post-construction</a></li>
           </ul>
         </li>
                 <li class="nav-item dropdown">
@@ -101,7 +102,8 @@
     <div class="collapse navbar-collapse" id="navbarScroll">
       <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="https://weridemarcondes.github.io/WebsiteCleaner/gallery.html">Photo gallery</a>
+         <!-- <a class="nav-link" aria-current="page" href="https://weridemarcondes.github.io/WebsiteCleaner/gallery.html">Photo gallery</a> -->
+            <a class="nav-link" aria-current="page" href="/gallery.html">Photo gallery</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -137,16 +139,20 @@
     </div>
      </div>
 </nav>
-
+</div>
 <div class="row">
     <div class="card" id="about">
+            <div class="card-image-about">
+</div>
       <div class="card-body" >
         <h5 class="card-title" id="abouts">About Us</h5>
        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat maxime mollitia deleniti quos veniam consequuntur doloremque earum, laborum cum accusamus cumque ad minus suscipit eius quibusdam blanditiis ipsa omnis iste.
        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae illo itaque, voluptate nostrum, quod, autem id architecto laboriosam minus quaerat harum totam aperiam fugiat. Dolorem perspiciatis accusamus similique ipsum assumenda?
-      </div>
+      </div>   
     </div>
     <div class="card" id="mission">
+             <div class="card-image-mission">
+</div>
       <div class="card-body">
         <h5 class="card-title" id="missions">Mission Statement</h5>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non vero blanditiis nihil magnam sed iure in quia ullam alias ipsum, nemo vitae explicabo, possimus quod nostrum. Unde accusamus consequuntur eligendi.
@@ -155,6 +161,9 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta aliquam totam v
       </div>
     </div>
     <div class="card" id="vision">
+                     <div class="card-image-vision">
+
+</div>
       <div class="card-body">
         <h5 class="card-title" id="visions">Vision Statement</h5>
      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ipsam! Voluptatum quos sequi quod architecto sint quaerat quibusdam velit perspiciatis eum hic alias corrupti nostrum omnis fugit, debitis maiores fuga!
@@ -162,7 +171,6 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta aliquam totam v
      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat in consequatur assumenda minus quas consectetur nesciunt excepturi dolorum porro. Pariatur molestias rerum libero sequi accusantium non quia reprehenderit voluptas veniam?
       </div>
     </div>
-</div>
 </div>
 </header>
 
@@ -176,11 +184,13 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta aliquam totam v
         <h1 class="modal-title fs-5" id="exampleModalLabel">Deep Clean</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
+         <div class="card-image-modal-deep">
+</div>
       <div class="modal-body">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam magni nulla officia perspiciatis velit voluptatum quos quam molestias vel suscipit necessitatibus, id alias dolores est, quia ex, unde praesentium aliquid!
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
@@ -188,17 +198,19 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta aliquam totam v
 
 <!--regular clean Modal -->
 <div class="modal fade" id="regular" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog ">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Deep Clean</h1>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Regular Clean</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
+      <div class="card-image-modal-regular">
+</div>
       <div class="modal-body">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam magni nulla officia perspiciatis velit voluptatum quos quam molestias vel suscipit necessitatibus, id alias dolores est, quia ex, unde praesentium aliquid!
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary"  data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
@@ -209,14 +221,16 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta aliquam totam v
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Deep Clean</h1>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Post-Construction</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
+         <div class="card-image-modal-construction">
+</div>
       <div class="modal-body">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam magni nulla officia perspiciatis velit voluptatum quos quam molestias vel suscipit necessitatibus, id alias dolores est, quia ex, unde praesentium aliquid!
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>

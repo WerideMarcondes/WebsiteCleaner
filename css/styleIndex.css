@@ -13,6 +13,7 @@ body {
   height: 70px;
   width: 100%;
   margin-bottom: 30px;
+  font-family: "Tangerine", serif;
 }
 
 .navbar-title {
@@ -85,6 +86,11 @@ body {
     height: 750px;
   } */
 
+
+  .modal-title{
+    font-family: "Tangerine", serif;
+  }
+  
 .dropdown-item:hover {
   background-color: white;
   color: black;
@@ -97,10 +103,9 @@ body {
 
 .row {
   max-width: 100%;
-  justify-content: center;
 }
 
-@media (min-width: 275px) and (max-width: 576px) {
+@media (min-width: 50px) and (max-width: 576px) {
   .mainnav {
     display: none;
   }
@@ -108,49 +113,104 @@ body {
   body {
     margin: 0;
     padding: 0;
-    background-color: #f3e3d0;
+    background-color: white;
   }
-
-  .container {
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
+  .corporate {
+    font-size: 20px;
+    font-weight: bold;
+    color: goldenrod;
+    margin-right: auto;
+    padding: 10px;
+    font-family: "Tangerine", serif;
   }
-  .navbar-title {
-    text-align: center;
-    color: white;
-    font-size: 30px;
+  
+  .navbar-brand {
+    font-family: "Tangerine", serif;
   }
   .card {
-    margin: 0px;
-    padding: 0px;
-    margin-top: 0px;
-    width: 350px;
-    height: 350px;
-    font-size: 13px;
+    width: 100%;
+    height: 700px;
   }
 
   #about {
-    color: white;
-    background-color: #1b3c53;
+    color: black;
     margin-top: 0px;
+    background-color: #e6ebed;
+    font-size: 16px;
+    width: 100%;
   }
 
   #mission {
     color: black;
-    background-color: #82b8e7;
+    background-color: #f5f6f8;
     margin-top: 0px;
   }
 
   #vision {
     color: black;
-    background-color: #c0def3;
+    background-color: #e1e8ed;
     margin-top: 0px;
   }
 
+  .card-title {
+    font-family: "Tangerine", serif;
+    font-size: 48px;
+    text-shadow: 4px 4px 4px #aaa;
+  }
+
+  .card-image-about {
+    max-width: 100%;
+    height: 300px;
+    background-image: url("/img/backgroud/img\ bakg\ home\ main.jpeg");
+    background-size: cover; /* Faz a imagem cobrir a área [1] */
+    margin-top: 50px;
+  }
+  .card-image-mission {
+    max-width: 100%;
+    height: 300px;
+    background-image: url("/img/backgroud/img\ bkg\ kitchen.jpg");
+    background-size: cover; /* Faz a imagem cobrir o card */
+    background-position: center; /* Centraliza */
+    background-repeat: no-repeat; /* Evita repetição */
+  }
+  .card-image-vision {
+    max-width: 100%;
+    height: 300px;
+    background-image: url("/img/backgroud/img\ bkg\ sala.jpg");
+    background-size: cover; /* Faz a imagem cobrir o card */
+    background-position: center; /* Centraliza */
+    background-repeat: no-repeat; /* Evita repetição */
+  }
+  .card-image-modal-deep {
+    max-width: 100%;
+    height: 250px;
+    background-image: url("/img/backgroudmodal/img\ bakg\ deep.jpg");
+    background-size: cover; /* Faz a imagem cobrir o card */
+    background-position: center; /* Centraliza */
+    background-repeat: no-repeat; /* Evita repetição */
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .card-image-modal-regular {
+    max-width: 100%;
+    height: 250px;
+    background-image: url("/img/backgroudmodal/img\ bakg\ vacun.jpeg");
+    background-size: cover; /* Faz a imagem cobrir o card */
+    background-position: center; /* Centraliza */
+    background-repeat: no-repeat; /* Evita repetição */
+  }
+
+ .card-image-modal-construction{
+    max-width: 100%;
+    height: 250px;
+    background-image: url("/img/backgroudmodal/img\ bakg\ posconstruction.jpg");
+    background-size: cover; /* Faz a imagem cobrir o card */
+    background-position: center; /* Centraliza */
+    background-repeat: no-repeat; /* Evita repetição */
+ }
   .row {
-    margin-top: 60px;
-    gap: 10px;
+    max-height: 1200px;
+    max-width: 1200px; /* Largura máxima do conteúdo do body */
   }
 
   .navbar {
@@ -165,7 +225,7 @@ body {
 
   #offcanvasDarkNavbar {
     width: 250px; /* Largura fixa */
-    height: 400px;
+    height: 500px;
   }
 }
 
@@ -225,6 +285,7 @@ body {
     margin-bottom: 20px;
     text-align: right;
     border-radius: 0px;
+    font-family: "Tangerine", serif;
   }
 
   .offcanvas-body {
@@ -244,12 +305,12 @@ body {
 }
 
 @media (min-width: 991px) and (max-width: 1225px) {
-   @media (min-width: 991px) {
+  @media (min-width: 991px) {
     .hamburger {
       display: none;
     }
   }
-  
+
   body {
     margin: 0;
     padding: 0;

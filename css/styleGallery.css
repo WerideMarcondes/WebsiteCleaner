@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #f3e3d0;
+  background-color: black;
 }
 
 .container {
@@ -12,28 +12,29 @@ body {
 .navbar {
   justify-content: center;
   height: 70px;
+  font-family: "Tangerine", serif;
 }
 
 .navbar-title {
-    text-align: center;
-    color: goldenrod;
-    font-size: 20px;
-    font-weight: bolder;
-  }
+  text-align: center;
+  color: goldenrod;
+  font-size: 20px;
+  font-weight: bolder;
+}
 
-    .corporate {
-    font-size: 20px;
-    font-weight: bold;
-    color: goldenrod;
-    margin-right: auto;
-    padding: 10px;
-  }
+.corporate {
+  font-size: 20px;
+  font-weight: bold;
+  color: goldenrod;
+  margin-right: auto;
+  padding: 10px;
+  font-family: "Tangerine", serif;
+}
 
-  .navbarindex {
-    text-align: center;
-    position: absolute;
-  }
-
+.navbarindex {
+  text-align: center;
+  position: absolute;
+}
 
 .navbar-nav {
   margin: auto;
@@ -61,13 +62,9 @@ body {
 }
 .card-container {
   margin-top: 20px;
-  width: 20rem;
-  border: 3px solid #0e0d0d;
-  background-color: white;
-  border-radius: 15px;
+  width: 28rem;
   display: flex;
 }
-
 .image-card {
   padding: 5px;
   text-align: center;
@@ -75,28 +72,31 @@ body {
 img:hover {
   transform: scale(1.1);
 }
-
 img {
-  width: 120px; /* Largura fixa */
-  height: 200px; /* Altura fixa */
+  width: 200px; /* Largura fixa */
+  height: 250px; /* Altura fixa */
   object-fit: cover; /* Preenche a caixa, cortando o excesso */
   /* Ou use 'contain' para que a imagem caiba inteira */
   background-size: cover; /* Cobre a tela toda */
   background-position: center; /* Centraliza a imagem */
   background-repeat: no-repeat; /* Não repete a imagem */
   background-attachment: fixed;
-  border-radius: 30px;
+  border-radius: 0px;
   /* border: solid 5px; */
   transition: 0.7s;
+  gap: 15px;
 }
-
 .row {
   justify-content: center;
-  
 }
 
-@media (min-width: 275px) and (max-width: 576px) {
-  .mainnav  {
+@media (min-width: 50px) and (max-width: 576px) {
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }
+  .mainnav {
     display: none;
   }
   .pictures {
@@ -114,42 +114,50 @@ img {
     height: 70px; /* Altura fixa */
     margin-top: 0;
     text-align: right;
-    border-radius: 0px;
+    font-family: "Tangerine", serif;
   }
-
+  .corporate {
+    font-size: 20px;
+    font-weight: bold;
+    color: goldenrod;
+    margin-right: auto;
+    padding: 10px;
+    font-family: "Tangerine", serif;
+  }
   .offcanvas-body {
     text-align: right;
   }
 
   #offcanvasDarkNavbar {
     width: 250px; /* Largura fixa */
-    height: 400px;
+    height: 450px;
   }
   img {
-    width: 120px; /* Largura fixa */
-    height: 200px; /* Altura fixa */
+    width: 200px; /* Largura fixa */
+    height: 300px; /* Altura fixa */
     object-fit: cover; /* Preenche a caixa, cortando o excesso */
     /* Ou use 'contain' para que a imagem caiba inteira */
     background-size: cover; /* Cobre a tela toda */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Não repete a imagem */
     background-attachment: fixed;
-    border-radius: 30px;
+    border-radius: 0px;
   }
 
   .image-card {
-    width: 50%; /* Ajuste conforme necessário */
-    padding: 10px;
+    width: 100%; /* Ajuste conforme necessário */
     text-align: center;
   }
 
+  img:hover {
+    transform: none;
+  }
   .card-container {
-    margin-top: 10px;
-    display: flex; /* Ativa o Flexbox */
-    width: 60%rem;
-    height: 17rem;
-    border-radius: 15px;
-    background-color: white;
+    background-color: transparent;
+    justify-content: center;
+    border: none;
+    border-radius: 0px;
+    margin-top: 0px;
   }
 
   .card-text {
@@ -165,7 +173,11 @@ img {
   .mainnav {
     display: none;
   }
-
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }
   .navbar-title {
     text-align: center;
     color: white;
@@ -177,6 +189,15 @@ img {
     height: 70px; /* Altura fixa */
     text-align: right;
     margin-top: 0px;
+    font-family: "Tangerine", serif;
+  }
+  .corporate {
+    font-size: 20px;
+    font-weight: bold;
+    color: goldenrod;
+    margin-right: auto;
+    padding: 10px;
+    font-family: "Tangerine", serif;
   }
 
   .offcanvas-body {
@@ -187,33 +208,35 @@ img {
   }
   #offcanvasDarkNavbar {
     width: 250px; /* Largura fixa */
-    height: 400px;
+    height: 450px;
   }
   img {
-    width: 120px; /* Largura fixa */
-    height: 200px; /* Altura fixa */
+    width: 140px; /* Largura fixa */
+    height: 250px; /* Altura fixa */
     object-fit: cover; /* Preenche a caixa, cortando o excesso */
     /* Ou use 'contain' para que a imagem caiba inteira */
     background-size: cover; /* Cobre a tela toda */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Não repete a imagem */
     background-attachment: fixed;
-    border-radius: 30px;
+    border-radius: 0px;
   }
 
   .image-card {
-    width: 50%; /* Ajuste conforme necessário */
-    padding: 10px;
     text-align: center;
   }
 
+  img:hover {
+    transform: none;
+  }
+
   .card-container {
-    margin-top: 10px;
-    display: flex; /* Ativa o Flexbox */
-    width: 50%rem;
-    height: 17rem;
-    border-radius: 15px;
-    background-color: white;
+    background-color: transparent;
+    justify-content: center;
+    border: none;
+    border-radius: 0px;
+    margin-top: 0px;
+    width: 20rem;
   }
 
   .card-text {
