@@ -102,12 +102,12 @@ img {
     display: none;
   }
 
-  .container {
+  /* .container {
     width: 100%;
     min-height: 100vh;
     background-color: #f0f0f0;
-    position: fixed;
-  }
+    position: absolute;
+  } */
 
   .pictures {
     margin-top: 80px;
@@ -125,7 +125,6 @@ img {
   }
 
   .corporate {
-    font-size: 20px;
     font-weight: bold;
     color: goldenrod;
     margin-right: auto;
@@ -137,7 +136,7 @@ img {
   }
   .navbar-brand {
     font-family: "Tangerine", serif;
-    font-size: 20px;
+    font-size: 15px;
   }
   .offcanvas-body {
     text-align: right;
@@ -170,7 +169,6 @@ img {
   }
   .card-container {
     background-color: transparent;
-    justify-content: center;
     border: none;
     border-radius: 0px;
     margin-top: 0px;
@@ -264,6 +262,9 @@ img {
   .card-title {
     font-size: 10px;
   }
+  img:hover {
+  transform: none;
+}
 }
 
 @media (min-width: 992px) {
