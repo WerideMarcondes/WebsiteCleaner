@@ -66,7 +66,6 @@ body {
   background-color: white;
   border-radius: 15px;
   display: flex;
-  
 }
 .image-card {
   padding: 5px;
@@ -96,30 +95,36 @@ img {
   body {
     margin: 0;
     padding: 0;
-    background-color: black;
+    height: 100%;
   }
   .mainnav {
     display: none;
   }
+
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f0f0f0; 
+  }
+
   .pictures {
-    margin-top: 90px;
+    margin-top: 80px;
   }
 
   .navbar-title {
     text-align: center;
     color: white;
     font-size: 30px;
-    
   }
 
   .navbar {
     justify-content: center;
-    height: 70px; /* Altura fixa */
-    margin-top: 0;
+    height: 70px; 
     text-align: right;
-     font-family: "Tangerine", serif;
+    font-family: "Tangerine", serif;
   }
- .corporate {
+
+  .corporate {
     font-size: 20px;
     font-weight: bold;
     color: goldenrod;
@@ -153,8 +158,8 @@ img {
   }
 
   img:hover {
-  transform: none;
-}
+    transform: none;
+  }
   .card-container {
     background-color: transparent;
     justify-content: center;
@@ -172,6 +177,7 @@ img {
   }
 }
 
+
 @media (min-width: 575px) and (max-width: 991px) {
   .mainnav {
     display: none;
@@ -179,8 +185,15 @@ img {
   body {
     margin: 0;
     padding: 0;
-    background-color: black;
   }
+
+    .container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f0f0f0; 
+    
+  }
+
   .navbar-title {
     text-align: center;
     color: white;
@@ -194,12 +207,11 @@ img {
     margin-top: 0px;
     font-family: "Tangerine", serif;
   }
-   .corporate {
+  .corporate {
     font-size: 20px;
     font-weight: bold;
     color: goldenrod;
     margin-right: auto;
-    padding: 10px;
     font-family: "Tangerine", serif;
   }
 
@@ -208,14 +220,15 @@ img {
   }
   .pictures {
     margin-top: 90px;
+    
   }
   #offcanvasDarkNavbar {
     width: 250px; /* Largura fixa */
     height: 450px;
   }
   img {
-    width: 140px; /* Largura fixa */
-    height: 250px; /* Altura fixa */
+    width: 300px; /* Largura fixa */
+    height: 370px; /* Altura fixa */
     object-fit: cover; /* Preenche a caixa, cortando o excesso */
     /* Ou use 'contain' para que a imagem caiba inteira */
     background-size: cover; /* Cobre a tela toda */
@@ -223,6 +236,7 @@ img {
     background-repeat: no-repeat; /* Não repete a imagem */
     background-attachment: fixed;
     border-radius: 0px;
+    
   }
 
   .image-card {
@@ -230,12 +244,14 @@ img {
   }
 
   .card-container {
+     width: 100%; /* Largura fixa */
+    height: 100%; /* Altura fixa */
     background-color: transparent;
     justify-content: center;
     border: none;
     border-radius: 0px;
     margin-top: 0px;
-    
+    gap: 40px;
   }
 
   .card-text {
