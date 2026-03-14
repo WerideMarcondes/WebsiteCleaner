@@ -6,7 +6,8 @@ body {
 
 .container {
   margin-top: 30px;
-  max-width: 100%;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .navbar {
@@ -104,7 +105,8 @@ img {
   .container {
     width: 100%;
     min-height: 100vh;
-    background-color: #f0f0f0; 
+    background-color: #f0f0f0;
+    position: fixed;
   }
 
   .pictures {
@@ -114,14 +116,12 @@ img {
   .navbar-title {
     text-align: center;
     color: white;
-    font-size: 30px;
   }
 
   .navbar {
     justify-content: center;
-    height: 70px; 
+    height: 70px;
     text-align: right;
-    font-family: "Tangerine", serif;
   }
 
   .corporate {
@@ -129,8 +129,15 @@ img {
     font-weight: bold;
     color: goldenrod;
     margin-right: auto;
-    padding: 10px;
     font-family: "Tangerine", serif;
+  }
+  .nav-link {
+    font-size: 16px;
+    font-family: "Tangerine", serif;
+  }
+  .navbar-brand {
+    font-family: "Tangerine", serif;
+    font-size: 20px;
   }
   .offcanvas-body {
     text-align: right;
@@ -153,7 +160,8 @@ img {
   }
 
   .image-card {
-    width: 100%; /* Ajuste conforme necessário */
+    width: 100%;
+    min-height: 100vh;
     text-align: center;
   }
 
@@ -177,7 +185,6 @@ img {
   }
 }
 
-
 @media (min-width: 575px) and (max-width: 991px) {
   .mainnav {
     display: none;
@@ -187,11 +194,10 @@ img {
     padding: 0;
   }
 
-    .container {
+  .container {
     width: 100%;
     min-height: 100vh;
-    background-color: #f0f0f0; 
-    
+    background-color: #f0f0f0;
   }
 
   .navbar-title {
@@ -212,6 +218,7 @@ img {
     font-weight: bold;
     color: goldenrod;
     margin-right: auto;
+
     font-family: "Tangerine", serif;
   }
 
@@ -220,15 +227,14 @@ img {
   }
   .pictures {
     margin-top: 90px;
-    
   }
   #offcanvasDarkNavbar {
     width: 250px; /* Largura fixa */
     height: 450px;
   }
   img {
-    width: 300px; /* Largura fixa */
-    height: 370px; /* Altura fixa */
+    width: 200px; /* Largura fixa */
+    height: 300px; /* Altura fixa */
     object-fit: cover; /* Preenche a caixa, cortando o excesso */
     /* Ou use 'contain' para que a imagem caiba inteira */
     background-size: cover; /* Cobre a tela toda */
@@ -236,7 +242,6 @@ img {
     background-repeat: no-repeat; /* Não repete a imagem */
     background-attachment: fixed;
     border-radius: 0px;
-    
   }
 
   .image-card {
@@ -244,14 +249,12 @@ img {
   }
 
   .card-container {
-     width: 100%; /* Largura fixa */
-    height: 100%; /* Altura fixa */
     background-color: transparent;
     justify-content: center;
     border: none;
     border-radius: 0px;
     margin-top: 0px;
-    gap: 40px;
+    gap: 30px;
   }
 
   .card-text {
