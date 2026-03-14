@@ -92,11 +92,10 @@ img {
   justify-content: center;
 }
 
-@media (min-width: 50px) and (max-width: 576px) {
+@media (min-width: 275px) and (max-width: 576px) {
   body {
     margin: 0;
     padding: 0;
-    height: 100%;
   }
   .mainnav {
     display: none;
@@ -105,7 +104,7 @@ img {
   /* .container {
     width: 100%;
     min-height: 100vh;
-    background-color: #f0f0f0;
+   text-align: center;
     position: absolute;
   } */
 
@@ -136,7 +135,7 @@ img {
   }
   .navbar-brand {
     font-family: "Tangerine", serif;
-    font-size: 15px;
+    font-size: 17px;
   }
   .offcanvas-body {
     text-align: right;
@@ -147,7 +146,7 @@ img {
     height: 450px;
   }
   img {
-    width: 200px; /* Largura fixa */
+    width: 170px; /* Largura fixa */
     height: 300px; /* Altura fixa */
     object-fit: cover; /* Preenche a caixa, cortando o excesso */
     /* Ou use 'contain' para que a imagem caiba inteira */
@@ -162,6 +161,7 @@ img {
     width: 100%;
     min-height: 100vh;
     text-align: center;
+    display: flex;
   }
 
   img:hover {
